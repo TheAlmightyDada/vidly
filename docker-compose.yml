@@ -27,4 +27,3 @@ services:
 
 volumes:
   vidly:
-  test:
