@@ -2,16 +2,16 @@ version: "3.8"
 
 services:
   frontend:
+    image: kamalsharma93/vidly-fe:1
     depends_on: 
       - backend
-    build: ./frontend
     ports:
       - 3000:3000
 
-  backend: 
+  backend:
+    image: kamalsharma93/vidly-be:1
     depends_on: 
       - db
-    build: ./backend
     ports: 
       - 3001:3001
     environment: 
